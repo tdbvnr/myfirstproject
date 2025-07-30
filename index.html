@@ -1,6 +1,106 @@
-<html>
-<head><title>Profile page of Dinesh Babu Thangarajan</title></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dinesh Babu | Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      background: #fff;
+      padding: 40px;
+      max-width: 600px;
+      margin: 40px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h1 {
+      text-align: center;
+      color: #00509e;
+    }
+    .timeline {
+      position: relative;
+      margin: 40px 0;
+      border-left: 4px solid #00509e;
+      padding-left: 24px;
+    }
+    .timeline-event {
+      margin-bottom: 36px;
+      position: relative;
+    }
+    .timeline-event:last-child {
+      margin-bottom: 0;
+    }
+    .timeline-event::before {
+      content: '';
+      position: absolute;
+      left: -34px;
+      top: 5px;
+      width: 16px;
+      height: 16px;
+      background: #fff;
+      border: 4px solid #2492ff;
+      border-radius: 50%;
+      z-index: 2;
+    }
+    .timeline-date {
+      font-weight: bold;
+      color: #2492ff;
+      margin-bottom: 6px;
+    }
+    .timeline-title {
+      font-size: 1.13em;
+      color: #333;
+      margin-bottom: 3px;
+    }
+    .timeline-desc {
+      font-size: .98em;
+      color: #666;
+    }
+  </style>
+</head>
 <body>
-My first page for demo 
+  <div class="container">
+    <h1>My Biography Timeline</h1>
+    <div class="timeline">
+      <div class="timeline-event">
+        <div class="timeline-date">School Years</div>
+        <div class="timeline-title">Robotics Club Member</div>
+        <div class="timeline-desc">Participated in robotics competitions and learned teamwork.</div>
+      </div>
+      <div class="timeline-event">
+        <div class="timeline-date">School Years</div>
+        <div class="timeline-title">State-level Chess Player</div>
+        <div class="timeline-desc">Represented school at state chess tournaments.</div>
+      </div>
+      <div class="timeline-event">
+        <div class="timeline-date">College</div>
+        <div class="timeline-title">Photography Club Secretary</div>
+        <div class="timeline-desc">Organized photo walks and campus events.</div>
+      </div>
+      <div class="timeline-event">
+        <div class="timeline-date">College</div>
+        <div class="timeline-title">Hackathon Participant</div>
+        <div class="timeline-desc">Developed software solutions in 24-hour team sprints.</div>
+      </div>
+      <div class="timeline-event">
+        <div class="timeline-date">Now</div>
+        <div class="timeline-title">Open-source Contributor</div>
+        <div class="timeline-desc">Actively contribute to projects on GitHub.</div>
+      </div>
+      <div class="timeline-event">
+        <div class="timeline-date">Now</div>
+        <div class="timeline-title">Learning Web Development</div>
+        <div class="timeline-desc">Exploring React and modern design trends.</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
